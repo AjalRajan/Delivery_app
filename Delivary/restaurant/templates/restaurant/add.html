@@ -1,0 +1,21 @@
+{% extends 'restaurant/Base.html'  %}
+
+{% block content %}
+
+{% if user.is_superuser%}
+
+	<div> 
+		<form method = "post">
+
+			{% csrf_token %}
+
+			{{form.as_p}}
+
+			<button> Add Food </button>
+		</form>
+	</div>
+
+
+{% endif %}
+
+{% endblock %}

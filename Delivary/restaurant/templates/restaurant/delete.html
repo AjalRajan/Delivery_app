@@ -1,0 +1,17 @@
+
+
+{% extends 'restaurant/Base.html' %}
+
+{% block content %}
+
+<div>
+		<form method="post">
+
+			{% csrf_token %}
+
+			<h3>ARE YOU SURE WANT TO DELETE THIS FOOD FORM OUR DATA BASE(RESTAURANT)</h3>
+			<button class="btn btn-primary">Delete FOOD</button>
+		</form>
+	</div>
+
+{% endblock %}

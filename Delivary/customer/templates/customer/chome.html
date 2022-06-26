@@ -1,0 +1,49 @@
+{% extends 'customer/cBase.html'  %}
+
+
+{% load static %}
+
+
+<head>
+	<meta charset="utf-8">
+	
+	<title></title>
+</head>
+
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static  '/home.css' %}">
+
+{% if user.is_authenticated%}
+
+<div class="home_cls_main">
+	{% for food in object_list %}
+
+		<div class="home_cls">
+
+			<div id="name">
+				<h4>Name : {{food.Name}}</h4>
+			</div>
+
+			<div id="price">
+				<h4>Price : ₹{{food.Price}}/p</h4>
+			</div>
+
+			<div id="about">
+				<h5>About : {{food.Discription}}</h5>
+			</div>
+
+			<a id="delete" href="{% url 'order' %}" title="">Order Food</a>
+					
+		</div>
+
+	{% endfor %}
+
+</div>	
+	
+
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,34 @@
+
+
+.nav{
+
+	background-color: rgba(0, 179, 0 , 0.9);
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+
+.list {
+
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	font-family: serif;
+	list-style: none;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.list a{
+
+	text-decoration: none;
+	padding: 5px;
+	font-family: Georgia;
+	font-size: 26px;
+	border: 1px solid green;
+	border-radius: 4px;
+	background-color: rgb(102, 255, 153);
+	margin: 4px;
+	color: black;
+}

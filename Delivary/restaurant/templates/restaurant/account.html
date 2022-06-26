@@ -1,0 +1,18 @@
+{% extends 'restaurant/Base.html'  %}
+
+{% block title %} Account Details {% endblock %}
+
+
+	{% block content %}
+		{% if user.is_superuser%}
+		<div>
+				<h3>
+					Account Balance :
+				</h3>
+
+				<h2>$4400</h2>
+		</div>
+		{% endif %}
+	{% endblock %}
+	
+

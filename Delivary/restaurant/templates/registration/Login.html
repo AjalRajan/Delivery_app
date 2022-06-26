@@ -1,0 +1,16 @@
+{% extends 'restaurant/base.html' %}
+
+{% block content %}
+
+
+<h1>Login</h1>
+
+<div >
+	<form method="post">
+		{% csrf_token %}
+		{{form.as_p}}
+		<button class="btn btn-primary"> LogIn</button>
+	</form>
+</div>
+
+{% endblock %}

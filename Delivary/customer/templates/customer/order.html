@@ -1,0 +1,19 @@
+{% extends 'customer/cBase.html'  %}
+
+{% block content %}
+
+
+
+	<div> 
+		<form method = "post">
+
+			{% csrf_token %}
+
+			{{form.as_p}}
+
+			<button> Order Food </button>
+		</form>
+	</div>
+
+
+{% endblock %}
